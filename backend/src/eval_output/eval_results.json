@@ -1,0 +1,61 @@
+{
+  "summary": {
+    "intent_accuracy": 0.98,
+    "entity_accuracy": 1.0,
+    "hallucination_rate": 0.0,
+    "total_cases": 50,
+    "errors": 0
+  },
+  "breakdown": {
+    "add_stock": {
+      "correct": 10,
+      "total": 10
+    },
+    "check_stock": {
+      "correct": 9,
+      "total": 10
+    },
+    "add_ledger": {
+      "correct": 6,
+      "total": 6
+    },
+    "add_payment": {
+      "correct": 6,
+      "total": 6
+    },
+    "daily_report": {
+      "correct": 5,
+      "total": 5
+    },
+    "add_order": {
+      "correct": 5,
+      "total": 5
+    },
+    "check_order": {
+      "correct": 3,
+      "total": 3
+    },
+    "check_ledger": {
+      "correct": 5,
+      "total": 5
+    }
+  },
+  "failed_cases": [
+    {
+      "id": 15,
+      "question": "stock check karo",
+      "ground_truth_intent": "check_stock",
+      "predicted_intent": "daily_report",
+      "ground_truth_entities": {},
+      "predicted_entities": {
+        "product": null,
+        "quantity": null,
+        "unit": null,
+        "customer": null,
+        "amount": null,
+        "price": null
+      },
+      "intent_correct": false
+    }
+  ]
+}

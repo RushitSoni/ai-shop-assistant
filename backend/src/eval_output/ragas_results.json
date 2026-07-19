@@ -1,0 +1,192 @@
+{
+  "summary": {
+    "faithfulness": 0.05,
+    "answer_relevancy": 0.7500000000000002,
+    "context_recall": 0.25,
+    "context_precision": 0.175,
+    "overall": 0.3062500000000001,
+    "total_evaluated": 20
+  },
+  "details": [
+    {
+      "question": "Tell me everything about customer Rahul \u2014 their orders, payment history, and pending balance. Rahul ka history do",
+      "answer_preview": "\ud83d\udcca Rahul ka history: \nRahul ki pending balance \u20b950000 hai \ud83d\udcc8. \nLekin, orders aur payment history ke ba",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 0.0,
+      "context_precision": 0.0,
+      "avg_score": 0.125
+    },
+    {
+      "question": "Give me a complete business summary \u2014 top sellers, low stock alerts, pending payments, and actionable recommendations. pura summary do",
+      "answer_preview": "\ud83d\udcca Business Summary \ud83d\udcca\n\n\ud83d\ude80 Top Sellers: Abhi tak koi sales nahi hui hai, isliye koi top seller nahi hai",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.375
+    },
+    {
+      "question": "Which products are running low or will run out soon based on sales velocity? What should I prioritize? \"Kaunsa stock khatam hone wala hai?\"",
+      "answer_preview": "\ud83d\udcca \u0905\u092d\u0940 \u0924\u094b \u0915\u094b\u0908 \u0938\u0947\u0932\u094d\u0938 \u0928\u0939\u0940\u0902 \u0939\u0941\u0908 \u0939\u0948 \u0907\u0938 \u0939\u092b\u094d\u0924\u0947, \u0907\u0938\u0932\u093f\u090f \u0938\u0947\u0932\u094d\u0938 \u0935\u0947\u0932\u094b\u0938\u093f\u091f\u0940 \u0915\u0947 \u0906\u0927\u093e\u0930 \u092a\u0930 \u0915\u0941\u091b \u0928\u0939\ufffd\ufffd\ufffd\u0902 \u0915\u0939\u093e \u091c\u093e \u0938\u0915\u0924\u093e \ud83e\udd14\u0964 \u0932",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.25
+    },
+    {
+      "question": "Give me a smart business insight about today's performance, stock health, and pending payments. \"Business kaisa hai aaj?\"",
+      "answer_preview": "\ud83d\udcca Aaj ka business thoda slow hai \ud83d\ude45\u200d\u2642\ufe0f. \n- Sales: \u20b90, last 7 days mein koi sales nahi hui \ud83d\udcc9\n- Stock: ",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.375
+    },
+    {
+      "question": "Based on current stock levels and recent sales, what should I reorder urgently? \"Kya mangana chahiye?\"",
+      "answer_preview": "\ud83d\udce6 Kya mangana chahiye? \ud83e\udd14\nAapke paas abhi sabhi products ki stock thik hai, aur last 7 days mein koi ",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 0.0,
+      "context_precision": 0.0,
+      "avg_score": 0.125
+    },
+    {
+      "question": "Based on last week sales velocity, forecast this week expected sales and revenue. Which products will run out first? is hafte kitana bikega?",
+      "answer_preview": "\ud83d\udcca \u092a\u093f\u091b\u0932\u0947 \u0939\u092b\u094d\u0924\u0947 \u0915\u094b\u0908 \u0938\u0947\u0932\u094d\u0938 \u0928\u0939\u0940\u0902 \u0939\u0941\u0908, \u0924\u094b \u0907\u0938 \u0939\u092b\u094d\u0924\u0947 \u0915\u0940 \u0938\u0947\u0932\u094d\u0938 \u0915\u093e \u0905\u0928\u0941\u092e\u093e\u0928 \u0932\u0917\u093e\u0928\u093e \u092e\u0941\u0936\u094d\u0915\u093f\ufffd\ufffd \u0939\u0948 \ud83e\udd14\u0964 \n\u0915\u094b\u0908 \u0921\u0947\u091f\u093e \u0928\u0939\u0940\u0902",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.0,
+      "context_precision": 0.0,
+      "avg_score": 0.25
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? Kiska baaki sabse zyada hai?",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki sabse zyada hai, \u20b950000 \ud83d\udcc8\n\nKoi regular payment ki ja",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? Kiska baaki sabse zyada hai?",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki sabse zyada hai, \u20b950000 \ud83d\udcc8\n\nKoi regular payment ki ja",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.375
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? Kiska baaki sabse zyada hai?",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki sabse zyada hai, \u20b950000 \ud83d\udcc8\n\nKoi regular payment ki ja",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? Kiska baaki sabse zyada hai?",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki sabse zyada hai, \u20b950000 \ud83d\udcc8\n\nKoi regular payment ki in",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? \"Kiska baaki sabse zyada hai?\"",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki sabse zyada hai, \u20b950000 \ud83d\udcc8\n\nPaying regularly ke baare",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? \"Kiska baaki sabse zyada hai?\"",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki \u20b950000 hai, jo sabse zyada hai \ud83d\udcc8\n\nKoi regular paymen",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Based on last week sales velocity, forecast this week expected sales and revenue. Which products will run out first? Is hafte kitna bikega?",
+      "answer_preview": "\ud83d\udcca Haan, last week ki sales velocity dekhte hain. \ud83d\udcc8\nGlass ki sales thi 16 units, revenue tha \u20b9192. \ud83d\udcca\n",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Based on last week sales velocity, forecast this week expected sales and revenue. Which products will run out first? s hafte kitna bikega?",
+      "answer_preview": "\ud83d\udcca Haan, main dekh raha hoon ki last week mein Glass ki 16 units bik gayi thi, jo ki \u20b9192 ka revenue ",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.375
+    },
+    {
+      "question": "Based on last week sales velocity, forecast this week expected sales and revenue. Which products will run out first? Is hafte kitna bikega?",
+      "answer_preview": "\ud83d\udcca Haan, last week ke sales velocity ke hisaab se, forecast kar sakte hain. \ud83d\udcc8\nGlass ka sales velocity",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? \"Kiska baaki sabse zyada hai?\"",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki \u20b950000 hai, jo sabse zyada hai \ud83d\udcc8\n\n\ud83d\udcca Kaun regular pay",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Who owes the most money? Who has been paying regularly? Who should I follow up with for payment? \"Kiska baaki sabse zyada hai?\"",
+      "answer_preview": "\ud83d\udcca Kiska baaki sabse zyada hai? \ud83e\udd14\nRahul ka baaki \u20b950000 hai, jo sabse zyada hai \ud83d\udcc8\n\nKoi regular paymen",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.5,
+      "context_precision": 0.0,
+      "avg_score": 0.325
+    },
+    {
+      "question": "Based on last week's sales velocity, forecast this week's expected sales and revenue. Which products will run out first? \"Is hafte kitna bikega?\"",
+      "answer_preview": "\ud83d\udcca Is hafte ki sales velocity dekhte hue, hum forecast kar sakte hain. \ud83d\udcc8\nGlass ki sales velocity 16 u",
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.375
+    },
+    {
+      "question": "Based on last week's sales velocity, forecast this week's expected sales and revenue. Which products will run out first? \"Is hafte kitna bikega?\"",
+      "answer_preview": "\ud83d\udcca Is hafte ki sales velocity dekhte hue, hum forecast kar sakte hain. \ud83d\udcc8\nGlass ka sales velocity 16 u",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.25
+    },
+    {
+      "question": "Based on last week's sales velocity, forecast this week's expected sales and revenue. Which products will run out first? Is hafte kitna bikega?",
+      "answer_preview": "\ud83d\udcca Hafte ki sales velocity dekhkar, forecast karte hain:\n- Glass: 16 units sold last week, to is haft",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.0,
+      "context_precision": 0.5,
+      "avg_score": 0.325
+    }
+  ]
+}

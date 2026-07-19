@@ -1,0 +1,10 @@
+node_modules/
+.env
+*.log
+.DS_Store
+
+
+src/eval_output/Assistant/
+src/eval_output/ragas-env/
+src/eval_output/__pycache__/
+*.pyc

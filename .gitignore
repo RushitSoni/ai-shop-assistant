@@ -8,3 +8,4 @@ dashboard/.env
 *.log
 .DS_Store
 ngrok.exe
+backend/src/eval_output/Shop/Lib/

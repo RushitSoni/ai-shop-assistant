@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "question": "20 Maggi aaye",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Maggi", "quantity": 20},
+    "ground_truth_answer": "Stock updated ya naya product add ho gaya"
+  },
+  {
+    "id": 2,
+    "question": "Maggi kitni bacha hai?",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Maggi"},
+    "ground_truth_answer": "Maggi ki current quantity batao"
+  },
+  {
+    "id": 3,
+    "question": "Rahul ka 500 baaki hai",
+    "ground_truth_intent": "add_ledger",
+    "ground_truth_entities": {"customer": "Rahul", "amount": 500},
+    "ground_truth_answer": "Ledger mein Rahul ka 500 add ho gaya"
+  },
+  {
+    "id": 4,
+    "question": "Rahul ne 200 diya",
+    "ground_truth_intent": "add_payment",
+    "ground_truth_entities": {"customer": "Rahul", "amount": 200},
+    "ground_truth_answer": "Payment record ho gaya, remaining balance batao"
+  },
+  {
+    "id": 5,
+    "question": "Aaj ka report",
+    "ground_truth_intent": "daily_report",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Aaj ke orders, sales, aur low stock batao"
+  },
+  {
+    "id": 6,
+    "question": "50 soap aaye 25 wala",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Soap", "quantity": 50, "price": 25},
+    "ground_truth_answer": "Soap stock add ho gaya with price"
+  },
+  {
+    "id": 7,
+    "question": "Soap kitna bacha?",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Soap"},
+    "ground_truth_answer": "Soap ki quantity batao"
+  },
+  {
+    "id": 8,
+    "question": "Ram ke liye 2 Maggi ka order",
+    "ground_truth_intent": "add_order",
+    "ground_truth_entities": {"product": "Maggi", "quantity": 2, "customer": "Ram"},
+    "ground_truth_answer": "Order place ho gaya with order ID"
+  },
+  {
+    "id": 9,
+    "question": "Ram ka order check karo",
+    "ground_truth_intent": "check_order",
+    "ground_truth_entities": {"customer": "Ram"},
+    "ground_truth_answer": "Ram ke recent orders dikhao"
+  },
+  {
+    "id": 10,
+    "question": "Baaki list dikao",
+    "ground_truth_intent": "check_ledger",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Sabka baaki list dikhao"
+  },
+  {
+    "id": 11,
+    "question": "20 magiie aaye",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Maggi", "quantity": 20},
+    "ground_truth_answer": "Spelling fix hokar Maggi stock add ho gaya"
+  },
+  {
+    "id": 12,
+    "question": "sope kitna hai",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Soap"},
+    "ground_truth_answer": "Soap ki quantity batao"
+  },
+  {
+    "id": 13,
+    "question": "Shyam ka 1000 pending hai",
+    "ground_truth_intent": "add_ledger",
+    "ground_truth_entities": {"customer": "Shyam", "amount": 1000},
+    "ground_truth_answer": "Shyam ka 1000 ledger mein add ho gaya"
+  },
+  {
+    "id": 14,
+    "question": "Shyam paid 500",
+    "ground_truth_intent": "add_payment",
+    "ground_truth_entities": {"customer": "Shyam", "amount": 500},
+    "ground_truth_answer": "Shyam ki 500 payment record ho gaya"
+  },
+  {
+    "id": 15,
+    "question": "stock check karo",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Poora stock list dikhao"
+  },
+  {
+    "id": 16,
+    "question": "10 chips packet aaye 10 rupay wala",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Chips", "quantity": 10, "price": 10},
+    "ground_truth_answer": "Chips stock add ho gaya"
+  },
+  {
+    "id": 17,
+    "question": "Priya ke liye 3 soap order karo",
+    "ground_truth_intent": "add_order",
+    "ground_truth_entities": {"product": "Soap", "quantity": 3, "customer": "Priya"},
+    "ground_truth_answer": "Priya ka order place ho gaya"
+  },
+  {
+    "id": 18,
+    "question": "Priya ka kitna baaki hai",
+    "ground_truth_intent": "check_ledger",
+    "ground_truth_entities": {"customer": "Priya"},
+    "ground_truth_answer": "Priya ka baaki balance batao"
+  },
+  {
+    "id": 19,
+    "question": "aaj kitna bikaa",
+    "ground_truth_intent": "daily_report",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Aaj ki sales report dikhao"
+  },
+  {
+    "id": 20,
+    "question": "30 biscuit aaye",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Biscuit", "quantity": 30},
+    "ground_truth_answer": "Biscuit stock add ho gaya"
+  },
+  {
+    "id": 21,
+    "question": "biscuit remain?",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Biscuit"},
+    "ground_truth_answer": "Biscuit ki quantity batao"
+  },
+  {
+    "id": 22,
+    "question": "Vijay ne 300 diye",
+    "ground_truth_intent": "add_payment",
+    "ground_truth_entities": {"customer": "Vijay", "amount": 300},
+    "ground_truth_answer": "Vijay ki payment record ho gaya"
+  },
+  {
+    "id": 23,
+    "question": "Vijay ka 600 udhar hai",
+    "ground_truth_intent": "add_ledger",
+    "ground_truth_entities": {"customer": "Vijay", "amount": 600},
+    "ground_truth_answer": "Vijay ka udhar add ho gaya"
+  },
+  {
+    "id": 24,
+    "question": "5 oil bottle aaye 120 ka",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Oil", "quantity": 5, "price": 120},
+    "ground_truth_answer": "Oil stock add ho gaya with price"
+  },
+  {
+    "id": 25,
+    "question": "oil kitna bacha",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Oil"},
+    "ground_truth_answer": "Oil ki quantity batao"
+  },
+  {
+    "id": 26,
+    "question": "Suresh ke liye 1 oil order",
+    "ground_truth_intent": "add_order",
+    "ground_truth_entities": {"product": "Oil", "quantity": 1, "customer": "Suresh"},
+    "ground_truth_answer": "Suresh ka order place ho gaya"
+  },
+  {
+    "id": 27,
+    "question": "recent orders dikhao",
+    "ground_truth_intent": "check_order",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Recent 5 orders dikhao"
+  },
+  {
+    "id": 28,
+    "question": "sabka hisaab dikhao",
+    "ground_truth_intent": "check_ledger",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Sabka baaki list dikhao"
+  },
+  {
+    "id": 29,
+    "question": "summary do aaj ka",
+    "ground_truth_intent": "daily_report",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Daily report dikhao"
+  },
+  {
+    "id": 30,
+    "question": "100 namkeen aaye 15 rupay ka",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Namkeen", "quantity": 100, "price": 15},
+    "ground_truth_answer": "Namkeen stock add ho gaya"
+  },
+  {
+    "id": 31,
+    "question": "namkeen left?",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Namkeen"},
+    "ground_truth_answer": "Namkeen ki quantity batao"
+  },
+  {
+    "id": 32,
+    "question": "Geeta ka 250 baaki hai",
+    "ground_truth_intent": "add_ledger",
+    "ground_truth_entities": {"customer": "Geeta", "amount": 250},
+    "ground_truth_answer": "Geeta ka baaki add ho gaya"
+  },
+  {
+    "id": 33,
+    "question": "Geeta ne 250 diya",
+    "ground_truth_intent": "add_payment",
+    "ground_truth_entities": {"customer": "Geeta", "amount": 250},
+    "ground_truth_answer": "Geeta ka hisaab saaf ho gaya"
+  },
+  {
+    "id": 34,
+    "question": "Geeta ka hisaab",
+    "ground_truth_intent": "check_ledger",
+    "ground_truth_entities": {"customer": "Geeta"},
+    "ground_truth_answer": "Geeta ka ledger dikhao"
+  },
+  {
+    "id": 35,
+    "question": "20 toffee aaye 1 rupay wali",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Toffee", "quantity": 20, "price": 1},
+    "ground_truth_answer": "Toffee stock add ho gaya"
+  },
+  {
+    "id": 36,
+    "question": "toffee kitni hai abhi",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Toffee"},
+    "ground_truth_answer": "Toffee ki quantity batao"
+  },
+  {
+    "id": 37,
+    "question": "Mohan ke liye 5 toffee",
+    "ground_truth_intent": "add_order",
+    "ground_truth_entities": {"product": "Toffee", "quantity": 5, "customer": "Mohan"},
+    "ground_truth_answer": "Mohan ka order place ho gaya"
+  },
+  {
+    "id": 38,
+    "question": "Mohan ka order",
+    "ground_truth_intent": "check_order",
+    "ground_truth_entities": {"customer": "Mohan"},
+    "ground_truth_answer": "Mohan ke orders dikhao"
+  },
+  {
+    "id": 39,
+    "question": "Mohan ka 50 due hai",
+    "ground_truth_intent": "add_ledger",
+    "ground_truth_entities": {"customer": "Mohan", "amount": 50},
+    "ground_truth_answer": "Mohan ka baaki add ho gaya"
+  },
+  {
+    "id": 40,
+    "question": "Mohan ne 50 pay kiya",
+    "ground_truth_intent": "add_payment",
+    "ground_truth_entities": {"customer": "Mohan", "amount": 50},
+    "ground_truth_answer": "Mohan ki payment record ho gaya"
+  },
+  {
+    "id": 41,
+    "question": "10 cold drink aaye 20 ka",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Cold Drink", "quantity": 10, "price": 20},
+    "ground_truth_answer": "Cold Drink stock add ho gaya"
+  },
+  {
+    "id": 42,
+    "question": "cold drink kitni bachi",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Cold Drink"},
+    "ground_truth_answer": "Cold Drink ki quantity batao"
+  },
+  {
+    "id": 43,
+    "question": "aaj ka hisaab",
+    "ground_truth_intent": "daily_report",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Daily report dikhao"
+  },
+  {
+    "id": 44,
+    "question": "sab log ka baaki",
+    "ground_truth_intent": "check_ledger",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Sabka baaki list dikhao"
+  },
+  {
+    "id": 45,
+    "question": "25 atta bag aaye 350 ka",
+    "ground_truth_intent": "add_stock",
+    "ground_truth_entities": {"product": "Atta", "quantity": 25, "price": 350},
+    "ground_truth_answer": "Atta stock add ho gaya"
+  },
+  {
+    "id": 46,
+    "question": "atta ka stock",
+    "ground_truth_intent": "check_stock",
+    "ground_truth_entities": {"product": "Atta"},
+    "ground_truth_answer": "Atta ki quantity batao"
+  },
+  {
+    "id": 47,
+    "question": "Kavita ke liye 2 atta",
+    "ground_truth_intent": "add_order",
+    "ground_truth_entities": {"product": "Atta", "quantity": 2, "customer": "Kavita"},
+    "ground_truth_answer": "Kavita ka order place ho gaya"
+  },
+  {
+    "id": 48,
+    "question": "Kavita ka 700 baaki",
+    "ground_truth_intent": "add_ledger",
+    "ground_truth_entities": {"customer": "Kavita", "amount": 700},
+    "ground_truth_answer": "Kavita ka baaki add ho gaya"
+  },
+  {
+    "id": 49,
+    "question": "Kavita ne 700 diye",
+    "ground_truth_intent": "add_payment",
+    "ground_truth_entities": {"customer": "Kavita", "amount": 700},
+    "ground_truth_answer": "Kavita ka hisaab saaf"
+  },
+  {
+    "id": 50,
+    "question": "low stock kya hai",
+    "ground_truth_intent": "daily_report",
+    "ground_truth_entities": {},
+    "ground_truth_answer": "Low stock items dikhao"
+  }
+]

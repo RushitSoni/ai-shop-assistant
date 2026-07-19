@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.0,
+    "context_recall": 0.0,
+    "context_precision": 0.0,
+    "overall": 0.0,
+    "total_evaluated": 1,
+    "judge_model": "groq/gemma2-9b-it",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "per_question": [
+    {
+      "question": "Calculate profit/margin analysis. Based on sales revenue and product prices, what is the estimated profit this week? Which products have best margins? Is hafte kitna profit hua",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.0,
+      "context_precision": 0.0
+    }
+  ]
+}
