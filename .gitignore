@@ -1,0 +1,10 @@
+ragas-env/
+backend/node_modules/
+dashboard/node_modules/
+backend/.env
+dashboard/.env
+**/__pycache__/
+*.pyc
+*.log
+.DS_Store
+ngrok.exe
