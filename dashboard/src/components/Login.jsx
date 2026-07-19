@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 // const BACKEND_URL = 'https://squeegee-hypnotist-scarring.ngrok-free.dev'
-const BACKEND_URL = 'https://your-render-url.onrender.com'
+const BACKEND_URL = 'https://ai-shop-assistant-4lq4.onrender.com'
 
 export default function Login({ onLogin }) {
   const [phone, setPhone] = useState('')
