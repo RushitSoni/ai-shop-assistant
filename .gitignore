@@ -9,4 +9,3 @@ dashboard/.env
 .DS_Store
 ngrok.exe
 backend/src/eval_output/Shop/Lib/
-ragas-env/
