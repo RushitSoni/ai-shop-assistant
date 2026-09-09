@@ -12,7 +12,7 @@ async function handleRazorpayWebhook(req, res) {
     const rawBody = req.body;
 
     const expectedSignature = crypto
-      .createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
+      .createHmac('sha256', process.env.RAZORPAY_WEBHOOK_SECRET)
       .update(rawBody)
       .digest('hex');
 

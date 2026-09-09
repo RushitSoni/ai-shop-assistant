@@ -1,4 +1,7 @@
-const supabase = require('../services/supabase');
+// Checks whether the shop has an active subscription/trial and,
+// if needed, sends a renewal warning or payment link.
+
+
 const { createPaymentLink } = require('../services/razorpay');
 const { sendWhatsAppAlert } = require('../services/twilio');
 

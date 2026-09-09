@@ -1,3 +1,5 @@
+// Handles Razorpay integration and creates monthly subscription payment links.
+
 const Razorpay = require('razorpay');
 
 const razorpay = new Razorpay({

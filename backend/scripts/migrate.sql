@@ -1,6 +1,6 @@
 -- ============================================================
 -- WhatsApp Shop — Supabase Migration
--- Run this in Supabase SQL Editor (Session 2)
+-- Run this in Supabase SQL Editor
 -- ============================================================
 
 -- Enable pgvector extension (needed for RAG)
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS products (
   quantity      NUMERIC DEFAULT 0,
   unit          TEXT DEFAULT 'units',
   low_threshold NUMERIC DEFAULT 5,
-  embedding     VECTOR(1536),       -- OpenAI text-embedding-3-small dimension
+  embedding     VECTOR(384),        -- HuggingFace all-MiniLM-L6-v2 dimension   
   created_at    TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at    TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );

@@ -1,6 +1,9 @@
 const supabase = require('./supabase');
 const https = require('https');
 
+
+
+// Main RAG pipeline: build shop context, generate answer, and log the interaction
 async function ragQuery(question, shopId, contextType) {
   const context = await buildContext(shopId, contextType, question);
   const answer = await generateAnswer(question, context);
@@ -12,6 +15,7 @@ async function ragQuery(question, shopId, contextType) {
   return answer;
 }
 
+// Find products semantically related to the user's question using vector search
 async function buildContext(shopId, contextType, question) {
   const context = {};
   const weekAgo = new Date();
@@ -106,7 +110,7 @@ ${context.all_products
 `;
 
   const payload = JSON.stringify({
-    model: 'llama-3.3-70b-versatile',
+    model: 'gpt-oss-120b',
     messages: [
       {
         role: 'system',

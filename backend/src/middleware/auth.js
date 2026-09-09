@@ -1,3 +1,6 @@
+// Authenticates a WhatsApp user by phone number and automatically registers
+// a new shop + owner account if the phone number is not already registered.
+
 const supabase = require('../services/supabase');
 
 async function authMiddleware(phone) {

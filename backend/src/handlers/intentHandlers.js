@@ -2,6 +2,7 @@ const supabase = require('../services/supabase');
 const { getEmbedding } = require('../services/embeddings');
 const { sendWhatsAppAlert } = require('../services/twilio');
 
+// Add stock or create a new product, with low-stock alert
 async function handleAddStock(entities, shopId) {
   const { product, quantity, unit, price } = entities;
 
@@ -48,6 +49,7 @@ async function handleAddStock(entities, shopId) {
   }
 }
 
+// Check stock for one product or display the complete inventory
 async function handleCheckStock(entities, shopId) {
   const { product } = entities;
 
@@ -85,6 +87,7 @@ async function handleCheckStock(entities, shopId) {
   return `📦 *${p.name}*\nQuantity: ${p.quantity} ${p.unit}\n💰 Price: ₹${p.price || 'Not set'}${low}`;
 }
 
+// Update the selling price of an existing product
 async function handleUpdatePrice(entities, shopId) {
   const { product, price } = entities;
 
@@ -111,6 +114,7 @@ async function handleUpdatePrice(entities, shopId) {
   return `✅ Price updated!\n📦 ${existing.name}\nPehle: ₹${existing.price || '?'}\nAb: ₹${price}`;
 }
 
+// Set the minimum stock level for low-stock alerts
 async function handleSetThreshold(entities, shopId) {
   const { product, threshold } = entities;
 
@@ -137,6 +141,7 @@ async function handleSetThreshold(entities, shopId) {
   return `✅ Threshold set!\n📦 ${existing.name}\nMinimum stock: ${threshold} ${existing.unit}\nAlert tab aayega jab stock ${threshold} se kam ho.`;
 }
 
+
 async function handleDeleteProduct(entities, shopId) {
   const { product } = entities;
 
@@ -160,6 +165,8 @@ async function handleDeleteProduct(entities, shopId) {
   return `✅ ${existing.name} stock se hata diya gaya.\nQuantity thi: ${existing.quantity} ${existing.unit}`;
 }
 
+
+// Create an order, calculate total, reduce stock, and alert on low inventory
 async function handleAddOrder(entities, shopId) {
   const { product, quantity, customer } = entities;
 
@@ -222,6 +229,8 @@ async function handleAddOrder(entities, shopId) {
   return `✅ Order placed!\n🧾 Order ID: #${orderId}\n👤 Customer: ${customer || 'Walk-in'}\n📦 ${stockItem.name}: ${orderQty} ${stockItem.unit}${amountMsg}\n📌 Status: Delivered`;
 }
 
+
+// View recent orders or orders belonging to a specific customer
 async function handleCheckOrder(entities, shopId) {
   const { customer } = entities;
 
@@ -297,6 +306,7 @@ async function handleUpdateOrder(entities, shopId) {
   return `✅ Order updated!\n🧾 #${orderId}\n👤 ${customer}\n📌 Status: ${newStatus}`;
 }
 
+// Cancel an order, restore its items to stock, and mark it cancelled
 async function handleCancelOrder(entities, shopId) {
   const { customer } = entities;
 
@@ -471,6 +481,8 @@ async function handleDeleteLedger(entities, shopId) {
   return `✅ ${customer} ka poora hisaab clear ho gaya!\n🗑️ ${existing.length} records delete kiye gaye.`;
 }
 
+
+// Generate today's sales, outstanding balance, and low-stock report
 async function handleDailyReport(shopId) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);

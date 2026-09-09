@@ -19,7 +19,7 @@ Message: "${message}"
 IMPORTANT: Return ONLY the JSON object. No explanation, no text before or after.`;
 
   const response = await groq.chat.completions.create({
-    model: 'llama-3.3-70b-versatile',
+    model: 'openai/gpt-oss-120b',
     messages: [
       { 
         role: 'system', 

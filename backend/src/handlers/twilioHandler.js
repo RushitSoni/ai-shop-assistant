@@ -55,6 +55,9 @@ const RAG_INTENTS = [
   'smart_summary', 'smart_compare', 'smart_daily_plan',
   'smart_profit', 'smart_wastage'
 ];
+
+// Downloads the voice message from Twilio using authentication,
+// follows redirects, and returns the audio data as a Buffer with its content type.
 async function downloadAudio(mediaUrl) {
   const auth = Buffer.from(
     `${process.env.TWILIO_ACCOUNT_SID}:${process.env.TWILIO_AUTH_TOKEN}`
@@ -98,6 +101,9 @@ async function downloadAudio(mediaUrl) {
   });
 }
 
+
+// Downloads the voice message, sends it to Groq Whisper for speech-to-text,
+// and returns the transcribed text.
 async function transcribeAudio(mediaUrl, mediaContentType) {
   const { buffer, contentType } = await downloadAudio(mediaUrl);
 
@@ -158,9 +164,10 @@ async function transcribeAudio(mediaUrl, mediaContentType) {
   return transcript;
 }
 
+// Converts the raw Hindi transcript into clean Hinglish Roman text .
 async function normalizeTranscript(hindiText) {
   const payload = JSON.stringify({
-    model: 'llama-3.3-70b-versatile',
+    model: 'openai/gpt-oss-120b',
     messages: [
       {
         role: 'system',
@@ -211,6 +218,8 @@ async function normalizeTranscript(hindiText) {
     req.end();
   });
 }
+
+
 
 // Process RAG in background and send proactive message
 async function processRAGAndSend(intent, entities, text, shop, phone) {
@@ -273,6 +282,8 @@ async function processRAGAndSend(intent, entities, text, shop, phone) {
   }
 }
 
+// Main WhatsApp message handler: processes text/voice messages,
+// authenticates the user, detects intent, executes actions, and sends replies.
 async function handleTwilioMessage(req, res) {
   const body = req.body;
   const from = body.From;
@@ -281,7 +292,7 @@ async function handleTwilioMessage(req, res) {
   const mediaUrl = body.MediaUrl0;
   const mediaType = body.MediaContentType0;
   let text = body.Body;
-  const isVoice = !!(mediaUrl && mediaType && mediaType.includes('audio'));
+  const isVoice = !!(mediaUrl && mediaType && mediaType.includes('audio'));  // Audio check
 
   console.log(`📨 Message from ${phone}: "${text || '[voice message]'}"`);
 
@@ -506,6 +517,7 @@ async function handleTwilioMessage(req, res) {
   }
 }
 
+// Sends a text reply back to WhatsApp through Twilio using TwiML.
 function sendReply(res, text) {
   const twiml = new twilio.twiml.MessagingResponse();
   const safeText = text.length > 1500 ? text.slice(0, 1497) + '...' : text;

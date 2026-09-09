@@ -46,7 +46,7 @@ Rate faithfulness from 0.0 to 1.0:
 Return ONLY a number between 0.0 and 1.0"""
 
   response = client.chat.completions.create(
-    model='llama-3.3-70b-versatile',
+    model='gpt-oss-120b',
     messages=[{'role': 'user', 'content': prompt}],
     temperature=0.1,
     max_tokens=10
@@ -71,7 +71,7 @@ Rate relevancy from 0.0 to 1.0:
 Return ONLY a number between 0.0 and 1.0"""
 
   response = client.chat.completions.create(
-    model='llama-3.3-70b-versatile',
+    model='gpt-oss-120b',
     messages=[{'role': 'user', 'content': prompt}],
     temperature=0.1,
     max_tokens=10
@@ -97,7 +97,7 @@ Rate context recall from 0.0 to 1.0:
 Return ONLY a number between 0.0 and 1.0"""
 
   response = client.chat.completions.create(
-    model='llama-3.3-70b-versatile',
+    model='gpt-oss-120b',
     messages=[{'role': 'user', 'content': prompt}],
     temperature=0.1,
     max_tokens=10
@@ -123,7 +123,7 @@ Rate context precision from 0.0 to 1.0:
 Return ONLY a number between 0.0 and 1.0"""
 
   response = client.chat.completions.create(
-    model='llama-3.3-70b-versatile',
+    model='',
     messages=[{'role': 'user', 'content': prompt}],
     temperature=0.1,
     max_tokens=10
