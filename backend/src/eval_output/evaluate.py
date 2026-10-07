@@ -19,7 +19,7 @@ with open('test_dataset.json') as f:
 def detect_intent(message):
     prompt = f"{BASE_PROMPT}\n\nMessage: \"{message}\""
     response = client.chat.completions.create(
-        model='gpt-oss-120b',
+        model='openai/gpt-oss-120b',
         messages=[{'role': 'user', 'content': prompt}],
         temperature=0.1,
         max_tokens=200
